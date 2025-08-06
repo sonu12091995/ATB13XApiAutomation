@@ -17,7 +17,7 @@ public class Delete_nonBDD {
     ValidatableResponse var;
 
     @Test
-    public void deleteMethod(){
+    public void DeleteMethod(){
         String bookingid = "3987";
         String token = "b713546733489e8";
 
