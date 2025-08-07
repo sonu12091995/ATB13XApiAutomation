@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_HTTP_Methods.PATCH;
+package com.sonusharma.RestAssured_RestBooking.DELETE;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -7,8 +7,8 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
-public class Patch_nonBDD {
-    // token , booking id, payload
+public class Delete_nonBDD {
+    // token , booking id,
     //url  https://restful-booker.herokuapp.com
     //path /booking/121
 
@@ -17,28 +17,26 @@ public class Patch_nonBDD {
     ValidatableResponse var;
 
     @Test
-    public void patchMethod(){
-        String booking = "3102";
-        String token = "0e725ccd980969e";
-        String payload = "{\n" +
-                "    \"firstname\" : \"viki\",\n" +
-                "    \"lastname\" : \"Brown\"\n" +
-                "}";
+    public void DeleteMethod(){
+        String bookingid = "3987";
+        String token = "b713546733489e8";
+
 
         r= RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("/bookingid/"+booking);
+        r.basePath("/bookingid/"+bookingid);
         r.cookie("token"+token);// token because under header token is add on hte cookie
         r.contentType(ContentType.JSON);
-        r.body(payload).log().all();
+
+
 
         // step=2
-        response = r.when().log().all().patch();
+        response = r.when().log().all().delete();
 
         //step=3
 
         var  =response.then().log().all();
-        var.statusCode(200);
+        var.statusCode(204);
 
     }
 }

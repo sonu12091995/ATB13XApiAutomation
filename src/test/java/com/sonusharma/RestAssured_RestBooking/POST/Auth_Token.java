@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_HTTP_Methods.POST;
+package com.sonusharma.RestAssured_RestBooking.POST;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_HTTP_Methods.GET;
+package com.sonusharma.RestAssured_RestBooking.GET;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

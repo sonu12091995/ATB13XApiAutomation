@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_HTTP_Methods.PUT;
+package com.sonusharma.RestAssured_RestBooking.PUT;
 
 
 import io.restassured.RestAssured;
