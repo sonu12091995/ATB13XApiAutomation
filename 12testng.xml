@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Mevan_project/ATB13XApiAutomation/src/test/java/com/sonusharma/restassured_restbooking/get/GET_class.java">
+        <classes>
+            <class name="com.sonusharma.restassuredbooking.get.GET_class">
+                <methods>
+                    <include name="get_Method"/>
+                    <include name="get_MethodNegetive"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

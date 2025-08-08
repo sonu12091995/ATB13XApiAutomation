@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_RestBooking.PUT;
+package com.sonusharma.restassuredbooking.PUT;
 
 
 import io.restassured.RestAssured;
@@ -36,8 +36,9 @@ ValidatableResponse var;
           r= RestAssured.given();
           r.baseUri("https://restful-booker.herokuapp.com");
           r.basePath("/bookingid/"+booking);
-          r.cookie("token"+token);// token because under header token is add on hte cookie
+          r.cookie("token",token);// token because under header token is add on hte cookie
           r.contentType(ContentType.JSON);
+
           r.body(payload).log().all();
 
           // step=2

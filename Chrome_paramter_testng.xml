@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/ATB13XApiAutomation">
+        <!-- Parameter passing test case -->
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Parameter_Passing">
+                <methods>
+                    <include name="demo1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

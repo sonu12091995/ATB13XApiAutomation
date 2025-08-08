@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/ATB13XApiAutomation">
+        <classes>
+            <class name="RestAssure_Product.DELETE.Delete_product">
+                <methods>
+                    <include name="DeleteProduct"/>
+                </methods>
+            </class>
+            <class name="RestAssure_Product.GET.GET_All_Product">
+                <methods>
+                    <include name="ProductGET"/>
+                </methods>
+            </class>
+            <class name="RestAssure_Product.GET.Get_Single_Product">
+                <methods>
+                    <include name="getSingleProduct"/>
+                </methods>
+            </class>
+            <class name="RestAssure_Product.POST.Post_Product">
+                <methods>
+                    <include name="AddProduct"/>
+                </methods>
+            </class>
+            <class name="RestAssure_Product.PUT.Update_product">
+                <methods>
+                    <include name="updateProduct"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.Allure_Reports.TestNg_Allure_report">
+                <methods>
+                    <include name="testcase_1"/>
+                    <include name="testcase_2"/>
+                    <include name="testcase_3"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.DELETE.Delete_nonBDD">
+                <methods>
+                    <include name="DeleteMethod"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.PATCH.Patch_nonBDD">
+                <methods>
+                    <include name="patchMethod"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.POST.Auth_Token">
+                <methods>
+                    <include name="TokenTest"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.PUT.Put_NonBDD">
+                <methods>
+                    <include name="Putreq"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.get.GET_class">
+                <methods>
+                    <include name="get_Method"/>
+                    <include name="get_MethodNegetive"/>
+                </methods>
+            </class>
+            <class name="com.sonusharma.restassuredbooking.get.HeadNonBdd">
+                <methods>
+                    <include name="head_Method"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

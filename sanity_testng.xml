@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="ATB13XApiAutomation">
+        <!--  sanity test cases are grouped under  -->
+
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Grouping"/>
+        </classes>
+    </test>
+</suite>

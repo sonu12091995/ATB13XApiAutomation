@@ -1,4 +1,4 @@
-package com.sonusharma.RestAssured_RestBooking.GET;
+package com.sonusharma.restassuredbooking.get;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
