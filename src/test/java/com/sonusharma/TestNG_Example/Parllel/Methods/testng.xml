@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel-Methods" parallel="methods" thread-count="2">
+    <test name="LoginTests">
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Parllel.Methods.Methd_Lavel"/>
+        </classes>
+    </test>
+</suite>
+
+

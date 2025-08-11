@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel-Methods" parallel="classes" thread-count="2">
+    <test name="LoginTests">
+        <classes>
+<!--           <class lavel parrlel testing xml "/>-->
+            <class name="com.sonusharma.TestNG_Example.Parllel.class_lavel.chrome"/>
+            <class name="com.sonusharma.TestNG_Example.Parllel.class_lavel.Firefox"/>
+        </classes>
+    </test>
+</suite>
+
+

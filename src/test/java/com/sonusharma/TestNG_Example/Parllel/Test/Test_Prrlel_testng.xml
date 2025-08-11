@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel-Methods" parallel="tests" thread-count="3">
+
+    <!-- Test Name: API This test will execute all test from APISmoke class in parallel. -->
+    <test name="API">
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Parllel.Test.APISmoke"/>
+        </classes>
+    </test>
+
+    <!-- Test Name: UIThis test will execute all test from UISmoke class in parallel.  -->
+    <test name="UI">
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Parllel.Test.UISmoke"/>
+        </classes>
+    </test>
+
+    <!--Test Name: DB   This test will execute all test from DBSmoke class in parallel.-->
+    <test name="DB">
+        <classes>
+            <class name="com.sonusharma.TestNG_Example.Parllel.Test.DBSmoke"/>
+        </classes>
+    </test>
+
+</suite>
