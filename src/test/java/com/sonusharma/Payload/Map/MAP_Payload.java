@@ -76,26 +76,20 @@ ValidatableResponse var;
         var.body("booking.lastname", Matchers.equalTo("sharma"));
         var.body("booking.bookingdates.checkout", Matchers.notNullValue());
 
-        // TestNg Assertion and Assertj
-
-        // Step- 1  Extract the valur syntex Integer bookingid = response.then().extract().path("JSON path URL");
-
+        // Extract values
         Integer bookingid = response.then().extract().path("bookingid");
         String firstname = response.then().extract().path("booking.firstname");
-        String lastname = response.then().extract().path("booking.firstname");
         boolean depositpaid = response.then().extract().path("booking.depositpaid");
 
-        //Step=2  Write assertion TestNG
+// TestNG assertions
         Assert.assertNotNull(bookingid);
-        Assert.assertEquals(firstname,"meenu");
-        Assert.assertEquals(lastname,"sharma");
-
+        Assert.assertEquals(firstname, "meenu");
         Assert.assertTrue(depositpaid);
 
-       // Assertion AssertJ
-        assertThat(bookingid).isNotZero().isNotNull().isPositive();
-        assertThat(firstname).isNotBlank().isNotEmpty().isEqualTo("meenu");
-        assertThat(depositpaid).isTrue().isNotNull();
+// AssertJ assertions
+        assertThat(bookingid).isNotNull().isNotZero().isPositive();
+        assertThat(firstname).isNotNull().isNotBlank().isEqualTo("meenu");
+        assertThat(depositpaid).isTrue();
 
 
 
