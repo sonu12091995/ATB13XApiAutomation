@@ -1,6 +1,6 @@
 package com.sonusharma.Payload.pojo_Class.Manualy_Pojo.Response_Pojo;
 
-import com.sonusharma.Payload.pojo_Class.Manualy_Pojo.RequestPojo.booking_Parent;
+import com.sonusharma.Payload.pojo_Class.Manualy_Pojo.RequestPojo.BookingParent;
 
 public class Response {
     // Response pojo
@@ -19,26 +19,33 @@ public class Response {
         "additionalneeds": "Breakfast"
     }
 }*/
-    private String bookingid;
-    private booking_Parent booking;// boking_parent class already create all geter setter thats why reuse
-    public booking_Parent getBooking() {
-        return booking;
+   // Class representing the booking response
+    public class BookingResponse {
+
+        // Unique ID for the booking
+        private String bookingId;
+
+        // Booking details (reusing BookingParent class)
+        private BookingParent booking;
+
+        // Getter and Setter for bookingId
+        public String getBookingId() {
+            return bookingId;
+        }
+
+        public void setBookingId(String bookingId) {
+            this.bookingId = bookingId;
+        }
+
+        // Getter and Setter for booking
+        public BookingParent getBooking() {
+            return booking;
+        }
+
+        public void setBooking(BookingParent booking) {
+            this.booking = booking;
+        }
     }
-
-    public void setBooking(booking_Parent booking) {
-        this.booking = booking;
-    }
-
-    public String getBookingid() {
-        return bookingid;
-    }
-
-    public void setBookingid(String bookingid) {
-        this.bookingid = bookingid;
-    }
-
-   ;
-
 
 
 
